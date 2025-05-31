@@ -45,7 +45,7 @@ import logging
 import time
 from database import init_db, SessionLocal
 from dexscreener_fetcher import fetch_trending_pairs, fetch_token_pairs, store_tokens_from_dexscreener
-from pumpfun_fetcher import PumpFunFetcher, store_pumpfun_coins
+from pumpfun_fetcher import PumpFunFetcher
 from config import FETCH_INTERVAL_SECONDS, LOG_LEVEL
 
 # Configure logging

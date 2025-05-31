@@ -54,6 +54,11 @@ class Token(Base):
     social_links_raw = Column(JSON, nullable=True)
     social_links_verified_status = Column(String, default="PENDING", index=True)
     verified_social_links = Column(JSON, nullable=True)
+    last_updated = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    created_at = Column(DateTime(timezone=True), default=lambda: datetime.now(timezone.utc))
+    pumpfun_last_fetched = Column(DateTime(timezone=True))
+    fetch_error_count = Column(Integer, default=0)
+
 
 class InsiderTransaction(Base):
     __tablename__ = "insider_transactions"

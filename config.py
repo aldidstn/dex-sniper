@@ -18,8 +18,11 @@ DEX_FILTER_MAX_AGE_DAYS = int(os.getenv("DEX_FILTER_MAX_AGE_DAYS", 2))
 DEX_FILTER_MIN_HOLDER_COUNT = int(os.getenv("DEX_FILTER_MIN_HOLDER_COUNT", 10000))
 
 # PumpFun API
-PUMPFUN_API_URL = os.getenv("PUMPFUN_API_URL", "https://frontend-api.pump.fun/coins")
-PUMPFUN_WEBSOCKET_URL = os.getenv("PUMPFUN_WEBSOCKET_URL", "wss://frontend-api.pump.fun/socket/websocket?vsn=2.0.0")
+PUMPFUN_API_URL = os.getenv("PUMPFUN_API_URL", "https://api.pump.fun/coins")
+PUMPFUN_WEBSOCKET_URL = os.getenv("PUMPFUN_WEBSOCKET_URL", "wss://api.pump.fun/socket/websocket")
+PUMPFUN_RECONNECT_DELAY = int(os.getenv("PUMPFUN_RECONNECT_DELAY", 5))
+PUMPFUN_MAX_RECONNECT_ATTEMPTS = int(os.getenv("PUMPFUN_MAX_RECONNECT_ATTEMPTS", 10))
+
 
 # Trading Parameters
 DEFAULT_SLIPPAGE_BPS = int(os.getenv("DEFAULT_SLIPPAGE_BPS", 100))
