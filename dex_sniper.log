@@ -1,0 +1,6 @@
+2025-05-31 19:45:01,704 - pumpfun_fetcher - WARNING - MORALIS_API_KEY not set. Some endpoints may not work.
+2025-05-31 19:45:01,705 - __main__ - INFO - Starting DEX Sniper...
+2025-05-31 19:45:01,707 - pumpfun_fetcher - ERROR - Moralis API key is required but not provided
+2025-05-31 19:45:27,278 - pumpfun_fetcher - WARNING - MORALIS_API_KEY not set. Some endpoints may not work.
+2025-05-31 19:45:27,279 - __main__ - INFO - Starting DEX Sniper...
+2025-05-31 19:45:27,281 - pumpfun_fetcher - ERROR - Moralis API key is required but not provided
