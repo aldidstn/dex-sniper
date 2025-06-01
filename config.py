@@ -10,7 +10,7 @@ class Config:
     max_retries: int = 3
     
     # Database Configuration
-    db_path: str = "memecoins.db"
+    DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///memecoins.db')
     
     # Logging Configuration
     log_level: str = "INFO"
