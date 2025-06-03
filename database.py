@@ -8,6 +8,29 @@ from config import DATABASE_URL
 
 Base = declarative_base()
 
+class Database:
+    def __init__(self, db_path=None):
+        # Use DATABASE_URL from config or override with db_path
+        from config import DATABASE_URL
+        self.engine = create_engine(DATABASE_URL if db_path is None else f"sqlite:///{db_path}")
+        Base.metadata.create_all(self.engine)
+        self.Session = sessionmaker(bind=self.engine)
+        self.session = self.Session()
+
+    def initialize(self):
+        Base.metadata.create_all(self.engine)
+
+    def add_token(self, token_data):
+        token = Token(**token_data)
+        self.session.add(token)
+        self.session.commit()
+
+    def token_exists(self, mint_address):
+        return self.session.query(Token).filter_by(pumpfun_mint_address=mint_address).first() is not None
+
+    def close(self):
+        self.session.close()
+
 class Token(Base):
     __tablename__ = 'tokens'
     
@@ -53,5 +76,13 @@ def get_db_session():
     engine = init_db()
     SessionLocal = sessionmaker(bind=engine)
     return SessionLocal()
+# engine = create_engine(DATABASE_URL)
+# SessionLocal = sessionmaker(bind=engine)
+
+# def init_db():
+#     Base.metadata.create_all(engine)
+
+# def get_db_session():
+#     return SessionLocal()
 
 SessionLocal = sessionmaker(bind=init_db())

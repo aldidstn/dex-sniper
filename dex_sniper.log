@@ -24,3 +24,84 @@
 2025-06-01 12:42:56,447 - pumpfun_fetcher - INFO - Making request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new (attempt 1/3)
 2025-06-01 12:42:57,084 - pumpfun_fetcher - ERROR - Moralis API health check failed: Invalid API key or authentication failed
 2025-06-01 12:42:57,084 - __main__ - ERROR - API health check failed. Exiting.
+2025-06-01 13:40:04,744 - root - INFO - Initializing database...
+2025-06-01 13:40:04,744 - root - INFO - Performing API health check...
+2025-06-01 13:40:04,744 - pumpfun_fetcher - INFO - Making health check request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new
+2025-06-01 13:40:05,201 - pumpfun_fetcher - ERROR - API health check failed: Invalid API key or authentication failed
+2025-06-01 13:40:05,202 - root - ERROR - API health check failed. Please verify your API key is valid.
+2025-06-01 13:40:05,202 - root - ERROR - Failed to initialize. Exiting.
+2025-06-01 13:40:52,177 - root - INFO - Initializing database...
+2025-06-01 13:40:52,177 - root - INFO - Performing API health check...
+2025-06-01 13:40:52,177 - pumpfun_fetcher - INFO - Making health check request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new
+2025-06-01 13:40:52,790 - pumpfun_fetcher - ERROR - API health check failed: Invalid API key or authentication failed
+2025-06-01 13:40:52,790 - root - ERROR - API health check failed. Please verify your API key is valid.
+2025-06-01 13:40:52,790 - root - ERROR - Failed to initialize. Exiting.
+2025-06-01 13:41:09,828 - root - INFO - Initializing database...
+2025-06-01 13:41:09,830 - root - INFO - Performing API health check...
+2025-06-01 13:41:09,830 - pumpfun_fetcher - INFO - Making health check request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new
+2025-06-01 13:41:10,456 - pumpfun_fetcher - ERROR - API health check failed: Invalid API key or authentication failed
+2025-06-01 13:41:10,456 - root - ERROR - API health check failed. Please verify your API key is valid.
+2025-06-01 13:41:10,457 - root - ERROR - Failed to initialize. Exiting.
+2025-06-01 13:42:15,785 - root - INFO - Initializing database...
+2025-06-01 13:42:15,785 - root - INFO - Performing API health check...
+2025-06-01 13:42:15,785 - pumpfun_fetcher - INFO - Making health check request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new
+2025-06-01 13:42:16,396 - pumpfun_fetcher - ERROR - API health check failed: Invalid API key or authentication failed
+2025-06-01 13:42:16,396 - root - ERROR - API health check failed. Please verify your API key is valid.
+2025-06-01 13:42:16,396 - root - ERROR - Failed to initialize. Exiting.
+2025-06-01 20:04:36,902 - root - INFO - Initializing database...
+2025-06-01 20:04:36,903 - root - INFO - Performing API health check...
+2025-06-01 20:04:36,903 - pumpfun_fetcher - INFO - Making health check request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new
+2025-06-01 20:04:37,383 - pumpfun_fetcher - ERROR - API health check failed: Invalid API key or authentication failed
+2025-06-01 20:04:37,383 - root - ERROR - API health check failed. Please verify your API key is valid.
+2025-06-01 20:04:37,383 - root - ERROR - Failed to initialize. Exiting.
+2025-06-01 20:06:44,643 - root - INFO - Initializing database...
+2025-06-01 20:06:44,644 - root - INFO - Performing API health check...
+2025-06-01 20:06:44,644 - pumpfun_fetcher - INFO - Making health check request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new
+2025-06-01 20:06:45,254 - pumpfun_fetcher - ERROR - API health check failed: Invalid API key or authentication failed
+2025-06-01 20:06:45,254 - root - ERROR - API health check failed. Please verify your API key is valid.
+2025-06-01 20:06:45,254 - root - ERROR - Failed to initialize. Exiting.
+2025-06-01 20:08:30,837 - root - INFO - Initializing database...
+2025-06-01 20:08:30,838 - root - INFO - Performing API health check...
+2025-06-01 20:08:30,838 - pumpfun_fetcher - INFO - Making health check request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new
+2025-06-01 20:08:31,544 - pumpfun_fetcher - ERROR - API health check failed: Invalid API key or authentication failed
+2025-06-01 20:08:31,544 - root - ERROR - API health check failed. Please verify your API key is valid.
+2025-06-01 20:08:31,544 - root - ERROR - Failed to initialize. Exiting.
+2025-06-01 20:09:28,702 - root - INFO - Initializing database...
+2025-06-01 20:09:28,702 - root - INFO - Performing API health check...
+2025-06-01 20:09:28,702 - pumpfun_fetcher - INFO - Making health check request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new
+2025-06-01 20:09:29,364 - pumpfun_fetcher - ERROR - API health check failed: Invalid API key or authentication failed
+2025-06-01 20:09:29,364 - root - ERROR - API health check failed. Please verify your API key is valid.
+2025-06-01 20:09:29,364 - root - ERROR - Failed to initialize. Exiting.
+2025-06-01 20:10:22,259 - root - INFO - Initializing database...
+2025-06-01 20:10:22,260 - root - INFO - Performing API health check...
+2025-06-01 20:10:22,260 - pumpfun_fetcher - INFO - Making health check request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new
+2025-06-01 20:10:22,675 - pumpfun_fetcher - ERROR - API health check failed: Invalid API key or authentication failed
+2025-06-01 20:10:22,676 - root - ERROR - API health check failed. Please verify your API key is valid.
+2025-06-01 20:10:22,676 - root - ERROR - Failed to initialize. Exiting.
+2025-06-01 20:37:39,955 - root - INFO - Initializing database...
+2025-06-01 20:37:39,955 - root - INFO - Performing API health check...
+2025-06-01 20:37:39,955 - root - ERROR - Initialization failed: 'PumpFunFetcher' object has no attribute 'health_check'
+2025-06-01 20:37:39,955 - root - ERROR - Failed to initialize. Exiting.
+2025-06-01 20:39:03,069 - root - INFO - Initializing database...
+2025-06-01 20:39:03,070 - root - INFO - Initialization complete
+2025-06-01 20:39:03,070 - root - INFO - Starting dex sniper main loop...
+2025-06-01 20:39:03,070 - pumpfun_fetcher - INFO - Making request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new (attempt 1/3)
+2025-06-01 20:39:03,703 - pumpfun_fetcher - ERROR - Authentication failed: Invalid API key
+2025-06-01 20:39:03,703 - root - WARNING - No tokens retrieved from API
+2025-06-01 20:39:13,708 - pumpfun_fetcher - INFO - Making request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new (attempt 1/3)
+2025-06-01 20:39:14,369 - pumpfun_fetcher - ERROR - Authentication failed: Invalid API key
+2025-06-01 20:39:14,370 - root - WARNING - No tokens retrieved from API
+2025-06-01 20:39:24,370 - pumpfun_fetcher - INFO - Making request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new (attempt 1/3)
+2025-06-01 20:39:24,637 - pumpfun_fetcher - ERROR - Authentication failed: Invalid API key
+2025-06-01 20:39:24,637 - root - WARNING - No tokens retrieved from API
+2025-06-01 20:39:34,642 - pumpfun_fetcher - INFO - Making request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new (attempt 1/3)
+2025-06-01 20:39:34,925 - pumpfun_fetcher - ERROR - Authentication failed: Invalid API key
+2025-06-01 20:39:34,925 - root - WARNING - No tokens retrieved from API
+2025-06-01 20:39:44,930 - pumpfun_fetcher - INFO - Making request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new (attempt 1/3)
+2025-06-01 20:39:45,504 - pumpfun_fetcher - ERROR - Authentication failed: Invalid API key
+2025-06-01 20:39:45,505 - root - WARNING - No tokens retrieved from API
+2025-06-01 20:39:55,508 - pumpfun_fetcher - INFO - Making request to https://solana-gateway.moralis.io/token/mainnet/exchange/pumpfun/new (attempt 1/3)
+2025-06-01 20:39:56,080 - pumpfun_fetcher - ERROR - Authentication failed: Invalid API key
+2025-06-01 20:39:56,080 - root - WARNING - No tokens retrieved from API
+2025-06-01 20:40:01,995 - root - INFO - Received signal 2. Shutting down gracefully...
+2025-06-01 20:40:06,085 - root - INFO - Cleaning up resources...

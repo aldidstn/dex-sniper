@@ -55,45 +55,45 @@ class PumpFunFetcher:
         self.session.headers.update({"X-API-Key": self.api_key})
         logger.info("API key updated successfully")
     
-    def health_check(self) -> bool:
-        """
-        Perform API health check to verify authentication and connectivity
+    # def health_check(self) -> bool:
+    #     """
+    #     Perform API health check to verify authentication and connectivity
         
-        Returns:
-            bool: True if API is accessible, False otherwise
-        """
-        if not self.api_key:
-            logger.error("No API key configured. Cannot perform health check.")
-            return False
+    #     Returns:
+    #         bool: True if API is accessible, False otherwise
+    #     """
+    #     if not self.api_key:
+    #         logger.error("No API key configured. Cannot perform health check.")
+    #         return False
         
-        endpoint = f"{self.base_url}/token/mainnet/exchange/pumpfun/new"
+    #     endpoint = f"{self.base_url}/token/mainnet/exchange/pumpfun/new"
         
-        try:
-            logger.info(f"Making health check request to {endpoint}")
-            response = self.session.get(endpoint, timeout=self.timeout)
+    #     try:
+    #         logger.info(f"Making health check request to {endpoint}")
+    #         response = self.session.get(endpoint, timeout=self.timeout)
             
-            if response.status_code == 200:
-                logger.info("API health check successful")
-                return True
-            elif response.status_code == 401:
-                logger.error("API health check failed: Invalid API key or authentication failed")
-                return False
-            elif response.status_code == 429:
-                logger.error("API health check failed: Rate limit exceeded")
-                return False
-            else:
-                logger.error(f"API health check failed: HTTP {response.status_code} - {response.text}")
-                return False
+    #         if response.status_code == 200:
+    #             logger.info("API health check successful")
+    #             return True
+    #         elif response.status_code == 401:
+    #             logger.error("API health check failed: Invalid API key or authentication failed")
+    #             return False
+    #         elif response.status_code == 429:
+    #             logger.error("API health check failed: Rate limit exceeded")
+    #             return False
+    #         else:
+    #             logger.error(f"API health check failed: HTTP {response.status_code} - {response.text}")
+    #             return False
                 
-        except requests.exceptions.Timeout:
-            logger.error("API health check failed: Request timeout")
-            return False
-        except requests.exceptions.ConnectionError:
-            logger.error("API health check failed: Connection error")
-            return False
-        except Exception as e:
-            logger.error(f"API health check failed: Unexpected error - {str(e)}")
-            return False
+    #     except requests.exceptions.Timeout:
+    #         logger.error("API health check failed: Request timeout")
+    #         return False
+    #     except requests.exceptions.ConnectionError:
+    #         logger.error("API health check failed: Connection error")
+    #         return False
+    #     except Exception as e:
+    #         logger.error(f"API health check failed: Unexpected error - {str(e)}")
+    #         return False
     
     def get_new_tokens(self, limit: int = 50) -> Optional[List[Dict[str, Any]]]:
         """

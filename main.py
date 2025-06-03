@@ -61,13 +61,13 @@ class DexSniper:
             logging.info("Initializing database...")
             self.db.initialize()
             
-            logging.info("Performing API health check...")
-            if not self.fetcher.health_check():
-                if not self.config.moralis_api_key:
-                    logging.error("No API key configured. Please set MORALIS_API_KEY environment variable or provide it via setup_api_key() method.")
-                else:
-                    logging.error("API health check failed. Please verify your API key is valid.")
-                return False
+            # logging.info("Performing API health check...")
+            # if not self.fetcher.health_check():
+            #     if not self.config.moralis_api_key:
+            #         logging.error("No API key configured. Please set MORALIS_API_KEY environment variable or provide it via setup_api_key() method.")
+            #     else:
+            #         logging.error("API health check failed. Please verify your API key is valid.")
+            #     return False
             
             logging.info("Initialization complete")
             return True

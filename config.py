@@ -2,6 +2,9 @@ import os
 from dataclasses import dataclass
 from typing import Optional
 
+# Database Configuration
+DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///memecoins.db')
+
 @dataclass
 class Config:
     # API Configuration
@@ -9,9 +12,8 @@ class Config:
     api_timeout: int = 30
     max_retries: int = 3
     
-    # Database Configuration
-    DATABASE_URL = os.getenv('DATABASE_URL', 'sqlite:///memecoins.db')
-    
+    db_path: str = "memecoins.db"
+
     # Logging Configuration
     log_level: str = "INFO"
     log_file: str = "dex_sniper.log"
